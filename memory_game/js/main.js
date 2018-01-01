@@ -26,9 +26,9 @@ var cardsInPlay =[];
 
 var checkForMatch = function(){
   if (cardsInPlay[0] === cardsInPlay[1]) {
-  alert("You found a match!");
+  document.getElementById('alertPlayer').innerHTML = "You found a match!";
   } else {
-  alert("Sorry, try again.");
+  document.getElementById('alertPlayer').innerHTML = "Sorry, try again!";
   }
 }
 // The function compares the cards flipped over by the user

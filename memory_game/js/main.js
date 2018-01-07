@@ -82,18 +82,19 @@ var resetBoard = function(){
  if (cardsInPlay.length >1) {
    cardsInPlay.length = 0 //we must set this back to 0 values to reset the game
   if (game>9){
+      var myMemory = "";
       switch (score) {
         case 0: case 1: case 2:
-        var myMemory = " terrible ";
+        myMemory = " terrible ";
         break;
         case 3: case 4: case 5:
-        var myMemory = "n ok ";
+        myMemory = "n ok ";
         break;
         case 6: case 7: case 8:
-        var myMemory = " good ";
+        myMemory = " good ";
         break;
        case 9: case 10:
-        var myMemory = " great ";
+        myMemory = " great ";
         break;
       }//No more refreshes after ten games. (gotta stop somehwere!)
       //But alert the user as to how good the user's memory is based on
